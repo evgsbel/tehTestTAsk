@@ -1,4 +1,89 @@
 @import 'font'
+$green: #30865E
+$grey: #919599
 
+p
+  margin: 0
+a
+  text-decoration: none
+  color: #000
+  &:hover
+    text-decoration: none
+    color: #000
+ul
+  margin: 0
+  padding: 0
+  list-style: none
 body
-  font-family: 'DIN Pro'
+  font-family: 'DINPro-regular'
+
+.container
+  width: 1148px
+
+/*font-weight*/
+.font_bold
+  font-family: 'DINPro-bold', serif
+
+.font_medium
+  font-family: 'DINPro-medium', serif
+
+.font_light
+  font-family: 'DINPro-light', serif
+
+.font_reguar
+  font-family: 'DINPro-regular', serif
+
+
+/* header */
+.header
+  border: 1px solid #ccc
+  box-sizing: border-box
+.logo
+  border-right: 1px solid #ccc
+  padding-top: 16px
+  padding-bottom: 16px
+  &__slogan
+    color: $grey
+    text-transform: uppercase
+    font-size: 11px
+    line-height: 17px
+    border-left: 1px solid $grey
+    padding-left: 10px
+  img
+    padding-right: 15px
+  &:hover
+      text-decoration: none
+
+.nav
+  border-right: 1px solid #ccc
+  &__item
+    width: 100%
+    position: relative
+    text-align: center
+    flex-basis: 63%
+    &_catalog
+      background: linear-gradient(192.47deg, #2D4F5E 15.38%, #30985D 87.88%)
+      display: flex
+      align-items: center
+      justify-content: center
+      height: 100%
+      flex-basis: 100%
+      a
+        color: #fff
+        letter-spacing: 0.15em
+        text-transform: uppercase
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 100%
+        &:after
+          content: ''
+          width: 9px
+          height: 5px
+          display: block
+          background-image: url("data:image/svg+xml,%3Csvg width='9' height='5' viewBox='0 0 9 5' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.466797 1L4.61495 4L8.4668 1' stroke='white'/%3E%3C/svg%3E%0A")
+          background-repeat: no-repeat
+          margin-left: 10px
+  &__link
+    color: $green
+    font-size: 17px
