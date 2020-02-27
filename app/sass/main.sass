@@ -1,6 +1,7 @@
 @import 'font'
 $green: #30865E
 $grey: #919599
+$black: #535C65
 
 p
   margin: 0
@@ -16,6 +17,7 @@ ul
   list-style: none
 body
   font-family: 'DINPro-regular'
+  font-size: 16px
 
 .container
   width: 1148px
@@ -38,10 +40,22 @@ body
 .header
   border: 1px solid #ccc
   box-sizing: border-box
+  &__contacts
+    flex: 0 0 13%
+    max-width: 13%
+  &__phone
+    color: #000
+    font-size: 25px
+  &__calback
+    color: $green
+    text-decoration: underline
+    font-size: 15px
 .logo
   border-right: 1px solid #ccc
   padding-top: 16px
   padding-bottom: 16px
+  flex: 0 0 20%
+  max-width: 20%
   &__slogan
     color: $grey
     text-transform: uppercase
@@ -53,9 +67,12 @@ body
     padding-right: 15px
   &:hover
       text-decoration: none
+  
 
 .nav
   border-right: 1px solid #ccc
+  flex: 0 0 60%
+  max-width: 60%
   &__item
     width: 100%
     position: relative
@@ -87,3 +104,102 @@ body
   &__link
     color: $green
     font-size: 17px
+
+.mini-cart
+  border-right: 1px solid #ccc
+  flex: 0 0 7%
+  max-width: 7%
+  &__icon
+    position: relative
+  &__count
+    background: linear-gradient(213.69deg, #2D4F5E 15.38%, #30985D 87.88%)
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25)
+    width: 19px
+    height: 19px
+    color: #fff
+    font-size: 12px
+    display: flex
+    align-items: center
+    justify-content: center
+    -webkit-border-radius: 50%
+    -moz-border-radius: 50%
+    border-radius: 50%
+    position: absolute
+    top: -5px
+    right: -10px
+  &__title
+    color: #565F69
+    font-size: 15px
+    margin-left: 15px
+
+
+.search
+  border-right: 1px solid #ccc
+  flex: 0 0 7%
+  max-width: 7%
+  &__icon
+    position: relative
+  &__title
+    color: #565F69
+    font-size: 15px
+    margin-left: 15px
+
+.banner
+  margin-top: 70px
+  margin-bottom: 75px
+  position: relative
+  background-image: url('../img/banner-bg.jpg')
+  background-repeat: no-repeat
+  height: 576px
+  background-position: 100% 0
+  &__wrapper
+    height: 576px
+  &__title
+    font-size: 40px
+    line-height: 55px
+    text-transform: uppercase
+    margin-bottom: 55px
+    &_green
+      color: $green
+    &_black
+      color: $black
+  &__subtitle
+    color: #565F69
+    margin-bottom: 55px
+  &__btn
+    background: linear-gradient(195.38deg, #2D4F5E 0%, #30985D 100%)
+    display: flex
+    align-items: center
+    justify-content: center
+    color: #fff
+    text-transform: uppercase
+    width: 170px
+    height: 40px
+  &__product
+    background-color: #fff
+    position: absolute
+    left: 0
+    right: 0
+    margin: 0 auto
+    width: 366px
+    height: 116px
+    text-align: right
+    bottom: 50px
+    padding: 15px 20px
+    box-sizing: border-box
+    &-name
+      color: #000
+      font-size: 17px
+      line-height: 28px
+      text-transform: uppercase
+    &-link
+      font-size: 16px
+      text-decoration: underline
+      text-transform: uppercase
+      color: $green
+      display: block
+      margin-top: 8px
+
+
+
+
